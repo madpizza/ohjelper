@@ -1,0 +1,36 @@
+Harjoitus 2
+
+Tee pseudokoodi, joka kuvaa miten kolme
+käyttäjän antamaa lukua tulostetaan suuruusjarjestyksessä
+pienimmästa suurimpaan.
+
+#####################################################
+Aloitus
+
+"Anna luvut a, b ja c"
+
+EHTO
+a>b?
+kyllä>	EHTO
+	b>c?
+
+	kyllä> "a b c" ulos
+	
+	ei>	EHTO
+		a>c?
+	
+		kyllä> "a c b" ulos
+		ei> "c a b" ulos
+
+ei>	EHTO
+	b>c?
+
+	kyllä>	EHTO
+		a>c?
+
+		kyllä> "b a c" ulos
+		ei> "b c a" ulos
+
+	ei> "c b a" ulos
+
+Loppu
